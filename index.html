@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Little Lemon</title>
+  <title>Rosa Sushi</title>
 
   <meta property="og:title" content="Our Menu">
   <meta property="og:type"  content="website">
@@ -26,8 +26,13 @@
 
       </video>
     </div>
-    <div id="location">
+    <div id="location"> 
+      <!--
+      sandbox="" define permissões que o iFrame tem, sem nada está tudo restrito
+      loading="lazy/eager" lazy só dá load quando chegarmos à parte do iFrame, eager dá load de imediato
+      -->
       <iframe
+        name="location"
         width="300"
         height="300"
         style="border:0"
@@ -38,14 +43,17 @@
       </iframe>
     </div>
     <div>
-      <audio id="audioLoop" controls loop autoplay>
-        <source src="rainForestLoop.mp3" type="audio/mpeg">
+      <audio id="audioLoop" controls loop autoplay="">
+        <source src="bgloop.mp3" type="audio/mpeg">
       </audio>
     </div>
+    <button>
+      Reservar mesa
+    </button>
   </main>
 </body>
 </html>
 
 <script>
-  document.getElementById("audioLoop").volume = 0.2; 
+  document.getElementById("audioLoop").volume = 0.03; 
 </script>
