@@ -15,7 +15,10 @@
 </head>
 <body>
   <header>
-    <img src="logo.png">
+    <figure>
+      <img src="logo.png" width="300" alt="Restaurant Logo"> 
+      <figcaption></figcaption>
+    </figure>
   </header>
   <main>
     <div>
@@ -23,16 +26,21 @@
 
       </video>
     </div>
+    <div id="location">
+      <iframe
+        width="300"
+        height="300"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFx7wMQl35Nr7jCU34BHScCzU3eroF5LI&q=Rosa_Sushi,Portugal">
+      </iframe>
+    </div>
     <div>
       <audio id="audioLoop" controls loop autoplay>
         <source src="rainForestLoop.mp3" type="audio/mpeg">
       </audio>
-    </div>
-    <div>
-      <figure> 
-        <img src="photo.png" width="320" alt="My Profile Photo"> 
-        <figcaption>A photo of myself on a beach in 2015</figcaption> 
-     </figure>
     </div>
   </main>
 </body>
